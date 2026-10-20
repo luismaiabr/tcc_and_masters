@@ -13,18 +13,18 @@ A infraestrutura do qDATA pode integrar modelos de inferência estatística exec
 
 ### 2.1. Detecção Sequencial de Quebras Estruturais (TRV e CUSUM)
 - **Teste da Razão de Verossimilhanças Sequencial (SPRT / TRV):** Avaliação contínua de hipóteses sobre parâmetros de volatilidade ou drift:
-  $$\Lambda_t = \sum_{i=1}^t \ln \frac{f(x_i \mid \theta_1)}{f(x_i \mid \theta_0)}$$
+  $$\Lambda_t = \sum_{i=1}^t \ln \frac{f(x_i \mid \theta_1)}{f(x_i \mid \theta_0)} \tag{(F7)}$$
 - **Teorema de Wilks e CUSUM:** Detecção de desvios significativos na média ou variância através de estatísticas acumuladas com convergência assintótica governada por distribuições qui-quadrado ($\chi^2$).
 
 ### 2.2. Estimação Recursiva por Máxima Verossimilhança (MLE)
 - **Processos de Hawkes (Auto-excitantes):** Modelagem de chegadas de ordens e agrupamento de volatilidade (*volatility clustering*):
-  $$\lambda(t) = \mu + \sum_{t_i < t} \alpha e^{-\beta(t - t_i)}$$
+  $$\lambda(t) = \mu + \sum_{t_i < t} \alpha e^{-\beta(t - t_i)} \tag{(F8)}$$
   Estimação recursiva dos parâmetros $(\mu, \alpha, \beta)$ via algoritmos online de gradiente sobre a superfície de log-verossimilhança.
 - **Volatilidade Condicional Recursiva:** Atualização contínua de modelos da família GARCH baseados na informação passada filtrada: $\sigma_t^2 = \mathbb{E}[r_t^2 \mid \mathcal{F}_{t-1}]$.
 
 ### 2.3. Limpeza de Ruído em Matrizes de Covariância (Teoria de Matrizes Aleatórias)
 - Em carteiras multivariadas com $N$ ativos e $T$ observações onde $N/T \to c \in (0,1)$, a matriz de covariância empírica contém autovalores puramente espúrios governados pela **Lei de Marchenko-Pastur**:
-  $$\lambda_{\pm} = \sigma^2 (1 \pm \sqrt{c})^2$$
+  $$\lambda_{\pm} = \sigma^2 (1 \pm \sqrt{c})^2 \tag{(F9)}$$
 - Aplicação de decomposição espectral no qDATA para filtrar autovalores dentro da densidade nula e reconstruir uma matriz de covariância estável para modelos de alocação de risco.
 
 ---

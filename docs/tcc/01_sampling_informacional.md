@@ -20,11 +20,11 @@ Projeta-se a evolução do núcleo de streaming do qDATA para processar os fluxo
 4. **Imbalance Bars (Tick/Volume Imbalance):**
    - Baseiam-se na assinatura direcional de cada negócio $b_t \in \{-1, +1\}$ via algoritmo de tick (regra clássica de Lee-Ready):
    
-   $$b_t = \begin{cases} +1, & \text{se } \Delta P_t > 0 \\ -1, & \text{se } \Delta P_t < 0 \\ b_{t-1}, & \text{se } \Delta P_t = 0 \end{cases}$$
+   $$b_t = \begin{cases} +1, & \text{se } \Delta P_t > 0 \\ -1, & \text{se } \Delta P_t < 0 \\ b_{t-1}, & \text{se } \Delta P_t = 0 \end{cases} \tag{(F1)}$$
 
    - Acumulam o desequilíbrio de fluxo $I_T = \sum_{t=1}^T b_t$. Uma barra fecha quando o desequilíbrio acumulado excede a sua esperança condicional:
    
-   $$\left| \sum_{t=1}^T b_t \right| \ge \mathbb{E}[T] \cdot \left| 2\mathbb{P}(b_t = 1) - 1 \right|$$
+   $$\left| \sum_{t=1}^T b_t \right| \ge \mathbb{E}[T] \cdot \left| 2\mathbb{P}(b_t = 1) - 1 \right| \tag{(F2)}$$
 
 ---
 

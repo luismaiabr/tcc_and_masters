@@ -13,21 +13,21 @@ Além de armazenar cotações brutas, a evolução do qDATA propõe uma camada d
 
 ### 2.1. Order Flow Imbalance (OFI)
 Mede o desequilíbrio líquido do fluxo de ordens nos melhores níveis de compra (*bid*) e venda (*ask*):
-$$OFI_t = \mathbb{I}_{\{P^b_t \ge P^b_{t-1}\}} q^b_t - \mathbb{I}_{\{P^b_t \le P^b_{t-1}\}} q^b_{t-1} - \left( \mathbb{I}_{\{P^a_t \le P^a_{t-1}\}} q^a_t - \mathbb{I}_{\{P^a_t \ge P^a_{t-1}\}} q^a_{t-1} \right)$$
+$$OFI_t = \mathbb{I}_{\{P^b_t \ge P^b_{t-1}\}} q^b_t - \mathbb{I}_{\{P^b_t \le P^b_{t-1}\}} q^b_{t-1} - \left( \mathbb{I}_{\{P^a_t \le P^a_{t-1}\}} q^a_t - \mathbb{I}_{\{P^a_t \ge P^a_{t-1}\}} q^a_{t-1} \right) \tag{(F3)}$$
 Onde $q^b, q^a$ são quantidades e $P^b, P^a$ são preços do melhor bid e ask. O OFI tem forte poder preditivo sobre variações de preço no curto prazo.
 
 ### 2.2. VPIN (Volume-Synchronized Probability of Informed Trading)
 Cálculo da probabilidade de negociação informada em janelas baseadas em volume (*volume buckets*):
-$$VPIN = \frac{\sum_{\tau=1}^N |V_\tau^B - V_\tau^S|}{N \cdot V}$$
+$$VPIN = \frac{\sum_{\tau=1}^N |V_\tau^B - V_\tau^S|}{N \cdot V} \tag{(F4)}$$
 Onde $V$ é o tamanho do balde de volume e $V_\tau^B, V_\tau^S$ são os volumes compradores e vendedores estimados dentro do balde $\tau$.
 
 ### 2.3. Micro-Price Ponderado
 Substitui o mid-price aritmético por uma métrica que reflete a pressão de liquidez nas pontas:
-$$P_t^{\text{micro}} = \frac{q_t^b P_t^a + q_t^a P_t^b}{q_t^b + q_t^a}$$
+$$P_t^{\text{micro}} = \frac{q_t^b P_t^a + q_t^a P_t^b}{q_t^b + q_t^a} \tag{(F5)}$$
 
 ### 2.4. Roll Spread (Medida Implícita de Custos)
 Estimador do bid-ask spread efetivo derivado da covariância serial dos retornos observados:
-$$S = 2 \sqrt{-\operatorname{Cov}(\Delta P_t, \Delta P_{t-1})}$$
+$$S = 2 \sqrt{-\operatorname{Cov}(\Delta P_t, \Delta P_{t-1})} \tag{(F6)}$$
 
 ---
 
