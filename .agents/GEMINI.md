@@ -55,3 +55,12 @@ Sempre que o usuário manifestar qualquer dúvida conceitual, estatística ou de
 ## 6. POSTURA E COMUNICAÇÃO
 - Direto, pragmático, rigoroso e analítico. Sem rodeios ou bajulações.
 - Suporte para redação acadêmica (ABNT / LaTeX) mantendo sobriedade e precisão terminológica.
+
+---
+
+## 7. DIRETIVA DE IDENTIFICAÇÃO E INDEXAÇÃO MATEMÁTICA (`math/`)
+Toda fórmula, axioma, teorema ou elemento matemático formal presente ou introduzido no repositório deve receber um identificador único categorizado entre parênteses:
+1. **Padrão por Categoria:** `(F1)`, `(F2)` para fórmulas; `(A1)`, `(A2)` para axiomas; `(T1)`, `(T2)` para teoremas; etc.
+2. **Registro em `math/`:** Todo identificador atribuído deve ser registrado em seu respectivo arquivo dentro de `math/` (`math/f.log` para fórmulas, `math/a.log` para axiomas, `math/t.log` para teoremas), armazenados **um abaixo do outro**.
+3. **Skill Automatizada:** Empregue a skill `identificador-matematico` para revisar automaticamente documentos com elementos matemáticos não codificados e indexá-los sequencialmente. Consulte [`.agents/rules/identificadores_matematicos.md`](rules/identificadores_matematicos.md).
+
