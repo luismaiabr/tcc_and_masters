@@ -24,7 +24,7 @@ Repositório central de planejamento acadêmico, estruturação de propostas de 
 | **TCC 6.4 (Trabalhos Futuros)** | [04. Baixa Latência e Replay Determinístico](docs/tcc/04_arquitetura_distribuida_replay.md) | Pipeline Hot/Cold e garantia de Point-in-Time Correctness. |
 | **TCC 6.4 (Trabalhos Futuros)** | [05. Governança e Roteamento Dual-Stream](docs/tcc/05_governanca_regulatoria_dual_stream.md) | Watermark temporal para delay de 15 min (B3) e Zero Trust. |
 | **Mestrado (MAE / IME-USP)** | [Cronograma ABE (16 Semanas)](docs/mestrado/cronograma_abe_16_semanas.md) | Roteiro de estudos em Probabilidade Avançada e Inferência. |
-| **Mestrado (MAE / IME-USP)** | [Ponte Teoria $\leftrightarrow$ Engenharia](docs/mestrado/ponte_estatistica_engenharia.md) | Mapeamento explícito entre teoremas da prova e código do qDATA. |
+| **Mestrado (MAE / IME-USP)** | [Ponte Teoria ↔ Engenharia](docs/mestrado/ponte_estatistica_engenharia.md) | Mapeamento explícito entre teoremas da prova e código do qDATA. |
 | **Mestrado (MAE / IME-USP)** | [Esboço de Pré-Projeto](docs/mestrado/pre_projeto_pesquisa_esboco.md) | Proposta formal para abordagem a professores de Séries Temporais. |
 | **Mercado Quant** | [Portfólio & Carreira Quant](docs/carreira/posicionamento_quant_portfolio.md) | Bullet points para CV e roteiro para entrevistas técnicas. |
 | **Módulos Educacionais** | [Hub de Dúvidas](duvidas/README.md) | Aprofundamentos didáticos estruturados (contexto, lição, bibliografia). |

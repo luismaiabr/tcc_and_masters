@@ -17,7 +17,7 @@ O escopo atual implementado no TCC do Luis (a plataforma qDATA em seu estado atu
 # CONTEXTO DO MESTRADO E TRANSIÇÃO DE CARREIRA (MAE / IME-USP)
 Luis está se preparando via Exame da ABE para o Mestrado em Estatística no IME-USP[cite: 71], dominando uma base rigorosa em:
 - **Álgebra Linear:** Decomposição espectral, autovalores/autovetores e matrizes de covariância[cite: 71].
-- **Probabilidade Avançada:** $\sigma$-álgebras, filtragens, Esperança Condicional $E[X\vert{}Y]$ (lei das expectativas iteradas) e variância condicional, transformações via Jacobiano, tipos de convergência estocástica e Teoremas Limites (LFGN, TCL)[cite: 71, 72].
+- **Probabilidade Avançada:** $\sigma$-álgebras, filtragens, Esperança Condicional $\mathbb{E}[X \mid Y]$ (lei das expectativas iteradas) e variância condicional, transformações via Jacobiano, tipos de convergência estocástica e Teoremas Limites (LFGN, TCL)[cite: 71, 72].
 - **Inferência Estatística:** Suficiência (Fisher-Neyman), Família Exponencial, Cota de Cramér-Rao, Estimadores de Máxima Verossimilhança (MLE), Matriz de Informação de Fisher, Propriedades Assintóticas, Lema de Neyman-Pearson (UMP) e Teste da Razão de Verossimilhanças (TRV / Teorema de Wilks / Wald / Escore)[cite: 72, 73].
 
 # DIRETRIZES DE ATUAÇÃO: COMO TRANSFORMAR UMA "API DE DADOS" EM ENGENHARIA QUANTITATIVA DE ELITE
@@ -33,7 +33,7 @@ Recrutadores de fundos quantitativos e bancos não se impressionam com um simple
 3. **Motor de Inferência Estatística e Detecção de Mudança de Regime em Streaming:**
    - Conectar diretamente o gRPC interno do qDATA[cite: 64] com os tópicos do IME-USP[cite: 71, 72]:
      - Implementação de **Testes da Razão de Verossimilhanças (TRV / Wilks)**[cite: 73] sequenciais ou algoritmos CUSUM/Page-Hinkley sobre o stream gRPC para detecção em tempo real de quebras estruturais e mudanças de regime de volatilidade.
-     - Estimação recursiva via **Máxima Verossimilhança (MLE)**[cite: 72] para processos de chegada de ordens (Processos de Hawkes / Poisson não-homogêneos) ou modelos de volatilidade condicional (GARCH / Volatilidade Estocástica) baseados em Esperança Condicional $E[X_t \vert{} \mathcal{F}_{t-1}]$[cite: 72].
+     - Estimação recursiva via **Máxima Verossimilhança (MLE)**[cite: 72] para processos de chegada de ordens (Processos de Hawkes / Poisson não-homogêneos) ou modelos de volatilidade condicional (GARCH / Volatilidade Estocástica) baseados em Esperança Condicional $\mathbb{E}[X_t \mid \mathcal{F}_{t-1}]$[cite: 72].
      - Expansão do serviço de matrizes de correlação com **Block Bootstrap** e limpeza de ruído em matrizes de covariância de alta dimensão via **Decomposição Espectral / Teoria de Matrizes Aleatórias (Marchenko-Pastur)**[cite: 32, 71].
 
 4. **Engenharia de Software Topo de Linha (Sistemas Distribuídos e Baixa Latência):**

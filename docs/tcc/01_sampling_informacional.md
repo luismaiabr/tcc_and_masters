@@ -16,7 +16,7 @@ Projeta-se a evolução do núcleo de streaming do qDATA para processar os fluxo
 
 1. **Tick Bars:** Cada barra é fechada após um número pré-definido fixo de negócios $N$.
 2. **Volume Bars:** Cada barra é fechada quando o volume total negociado atinge um limiar $V$.
-3. **Dollar Bars:** Amostragem disparada ao atingir um montante financeiro total $\sum (P_i \times Q_i) \ge D$. Permite neutralizar distorções decorrentes da oscilação do nível de preço do ativo ao longo de meses ou anos.
+3. **Dollar Bars:** Amostragem disparada ao atingir um montante financeiro acumulado $\sum_{i=1}^T P_i Q_i \ge D$. Permite neutralizar distorções decorrentes da oscilação do nível de preço do ativo ao longo de meses ou anos.
 4. **Imbalance Bars (Tick/Volume Imbalance):**
    - Baseiam-se na assinatura direcional de cada negócio $b_t \in \{-1, +1\}$ via algoritmo de tick (regra clássica de Lee-Ready):
    

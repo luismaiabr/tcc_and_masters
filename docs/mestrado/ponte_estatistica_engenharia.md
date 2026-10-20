@@ -8,7 +8,7 @@ Este documento detalha como cada conceito matemático estudado para o Exame da A
 
 ---
 
-## Tabela de Correspondência Teoria $\leftrightarrow$ Engenharia
+## Tabela de Correspondência Teoria ↔ Engenharia
 
 | Tópico da ABE (Teoria Estatística) | Aplicação Concreta em Finanças Quantitativas | Implementação no qDATA (Trabalhos Futuros) |
 | :--- | :--- | :--- |

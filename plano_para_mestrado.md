@@ -32,7 +32,7 @@ Abaixo está o plano mestre dividido em Cronograma de Estudos (16 Semanas), Meta
   - **Meta:** Resolver problemas envolvendo o cálculo de distribuições condicionais em vetores aleatórios discretos e contínuos.
 
 - **Semana 5: O Conceito Supremo — Esperança Condicional**
-  - **Tópicos:** $E[X|Y]$, propriedades da esperança condicional (lei das expectativas iteradas: $E[X] = E[E[X|Y]]$) e variância condicional.
+  - **Tópicos:** $\mathbb{E}[X \mid Y]$, propriedades da esperança condicional (lei das expectativas iteradas: $\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X \mid Y]]$) e variância condicional.
   - **Meta:** Esta é a ferramenta número 1 do mercado financeiro e da estatística avançada. Domine a intuição e o cálculo formal.
 
 - **Semana 6: Transformações de Variáveis Aleatórias**

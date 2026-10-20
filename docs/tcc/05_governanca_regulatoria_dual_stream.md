@@ -26,7 +26,7 @@ flowchart LR
 ### Características do Sistema:
 1. **Buffer Central Único Indexado por Tempo:** Os eventos são mantidos em uma fila circular em memória.
 2. **Ponteiro de Tempo Real:** Consumidores internos autenticados acessam a cabeça do buffer ($t = T_{\text{current}}$) através de uma malha privada Zero Trust (Tailscale/WireGuard), isolada da internet pública.
-3. **Ponteiro com Atraso Determinístico:** Consumidores externos e acadêmicos recebem eventos de um cursor defasado ($t = T_{\text{current}} - 15\text{ min}$), garantindo conformidade regulatória sem duplicar pipeline ou armazenamento.
+3. **Ponteiro com Atraso Determinístico:** Consumidores externos e acadêmicos recebem eventos de um cursor defasado ($t = T_{\text{current}} - \Delta t$, onde $\Delta t = 15\text{ min}$), garantindo conformidade regulatória sem duplicar pipeline ou armazenamento.
 
 ---
 
