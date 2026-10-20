@@ -27,6 +27,7 @@ Repositório central de planejamento acadêmico, estruturação de propostas de 
 | **Mestrado (MAE / IME-USP)** | [Ponte Teoria $\leftrightarrow$ Engenharia](docs/mestrado/ponte_estatistica_engenharia.md) | Mapeamento explícito entre teoremas da prova e código do qDATA. |
 | **Mestrado (MAE / IME-USP)** | [Esboço de Pré-Projeto](docs/mestrado/pre_projeto_pesquisa_esboco.md) | Proposta formal para abordagem a professores de Séries Temporais. |
 | **Mercado Quant** | [Portfólio & Carreira Quant](docs/carreira/posicionamento_quant_portfolio.md) | Bullet points para CV e roteiro para entrevistas técnicas. |
+| **Módulos Educacionais** | [Hub de Dúvidas](duvidas/README.md) | Aprofundamentos didáticos estruturados (contexto, lição, bibliografia). |
 | **Referências Canônicas** | [Identidade Original](identidade.md) / [Plano de Estudos ABE](plano_para_mestrado.md) | Diretrizes originais e plano mestre de estudos. |
 
 ---
@@ -41,7 +42,8 @@ tcc_and_masters/
 │   ├── [GEMINI.md](.agents/GEMINI.md)                                # Persona do Arquiteto Sênior Quant e regras gerais
 │   └── rules/
 │       ├── [quant_architecture.md](.agents/rules/quant_architecture.md) # Regras de arquitetura de baixa latência e streaming
-│       └── [academic_standards.md](.agents/rules/academic_standards.md) # Normas de rigor acadêmico, LaTeX/ABNT e IME-USP
+│       ├── [academic_standards.md](.agents/rules/academic_standards.md) # Normas de rigor acadêmico, LaTeX/ABNT e IME-USP
+│       └── [gestao_duvidas_educacionais.md](.agents/rules/gestao_duvidas_educacionais.md) # Diretiva de criação de lições sob demanda
 │
 ├── docs/
 │   ├── tcc/                                                          # Seção 6.4 do TCC: Trabalhos Futuros da Plataforma qDATA
@@ -59,6 +61,9 @@ tcc_and_masters/
 │   │
 │   └── carreira/                                                     # Posicionamento no Mercado Financeiro Quantitativo
 │       └── [posicionamento_quant_portfolio.md](docs/carreira/posicionamento_quant_portfolio.md) # Bullets para CV e guia para entrevistas
+│
+├── duvidas/                                                          # Módulos educacionais gerados a partir de dúvidas
+│   └── [README.md](duvidas/README.md)                                        # Estrutura e índice dos tópicos didáticos
 │
 ├── [identidade.md](identidade.md)                                            # Registro de identidade original e diretrizes do consultor Tee
 ├── [plano_para_mestrado.md](plano_para_mestrado.md)                                   # Documento de referência estática do cronograma da ABE

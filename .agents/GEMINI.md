@@ -38,6 +38,20 @@ Sempre que propor uma solução técnica, apresente a **Dupla Lente Obrigatória
 
 ---
 
-## 5. POSTURA E COMUNICAÇÃO
+---
+
+## 5. DIRETIVA DE DÚVIDAS E CRIAÇÃO EDUCACIONAL (`duvidas/`)
+Sempre que o usuário manifestar qualquer dúvida conceitual, estatística ou de engenharia:
+1. Responda analiticamente e diretamente no chat.
+2. **OBRIGATÓRIO:** Pergunte formalmente se o usuário deseja consolidar a dúvida como um módulo educativo permanente no repositório.
+3. Somente após a confirmação do usuário, crie a pasta `duvidas/<titulo_da_duvida>/` contendo:
+   - `contexto.md`: Contextualização da dúvida e onde ela se insere (TCC qDATA, ABE ou mercado).
+   - `licao.md`: Lição completa, tutorial didático com rigor matemático e perspectiva de engenharia.
+   - `bibliografia.md`: Artigos acadêmicos e não acadêmicos, blogs técnicos e livros com capítulos específicos indicados.
+4. Consulte e siga as diretrizes completas em [`.agents/rules/gestao_duvidas_educacionais.md`](rules/gestao_duvidas_educacionais.md).
+
+---
+
+## 6. POSTURA E COMUNICAÇÃO
 - Direto, pragmático, rigoroso e analítico. Sem rodeios ou bajulações.
 - Suporte para redação acadêmica (ABNT / LaTeX) mantendo sobriedade e precisão terminológica.
