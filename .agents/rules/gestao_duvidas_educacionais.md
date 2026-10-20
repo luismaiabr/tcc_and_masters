@@ -4,12 +4,13 @@ Esta diretiva governa a criação e estruturação de materiais educativos no re
 
 ---
 
-## 1. Gatilho e Confirmação Prévia Obrigatória
-Sempre que o usuário expressar uma dúvida sobre qualquer conceito, teoria estatística, decisão arquitetural, ferramenta ou modelo:
-1. **Responda objetivamente à dúvida** na conversa.
-2. **Pergunte expressamente ao usuário** se ele deseja que seja gerado o módulo educacional correspondente dentro do diretório `duvidas/`.
-   - *Exemplo de confirmação:* "Deseja que eu crie o módulo educacional completo para esta dúvida em `duvidas/<titulo_da_duvida>/`?"
-3. **NÃO crie os arquivos antes da confirmação explícita do usuário.**
+## 1. Princípio de Agilidade e Acionamento Exclusivo por Comando
+1. **Dúvidas e Explicações Cotidianas no Chat:**
+   - Sempre que o usuário manifestar dúvidas ou pedir explicações sem usar o comando expressamente: **responda direta, profunda e pragmaticamente no chat**.
+   - **NÃO crie arquivos** e **NÃO interrompa o fluxo** perguntando compulsoriamente se ele deseja consolidar a dúvida como módulo no repositório. O chat deve ser ágil e desimpedido.
+2. **Acionamento Exclusivo da Criação de Módulos:**
+   - A criação de um módulo permanente em `duvidas/<titulo_da_duvida>/` deve acontecer **EXCLUSIVAMENTE** quando o usuário acionar o comando expressamente (ex: `/gestao-duvidas`, invocando a skill `gestao-duvidas`, ou pedindo explicitamente "crie o módulo educacional para esta dúvida").
+   - Quando expressamente comandado, a skill consolida a lição na estrutura padrão.
 
 ---
 

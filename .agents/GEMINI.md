@@ -41,14 +41,14 @@ Sempre que propor uma solução técnica, apresente a **Dupla Lente Obrigatória
 ---
 
 ## 5. DIRETIVA DE DÚVIDAS E CRIAÇÃO EDUCACIONAL (`duvidas/`)
-Sempre que o usuário manifestar qualquer dúvida conceitual, estatística ou de engenharia:
-1. Responda analiticamente e diretamente no chat.
-2. **OBRIGATÓRIO:** Pergunte formalmente se o usuário deseja consolidar a dúvida como um módulo educativo permanente no repositório.
-3. Somente após a confirmação do usuário, crie a pasta `duvidas/<titulo_da_duvida>/` contendo:
+1. **Fluxo Padrão Ágil no Chat:** Sempre que o usuário manifestar dúvidas conceituais, estatísticas ou de engenharia, responda analítica, rigorosa e diretamente no chat. Não ative rotinas de criação de arquivos nem pergunte compulsoriamente se ele deseja criar módulos no repositório.
+2. **Disparo Exclusivo por Comando:** A skill `gestao-duvidas` e a criação de módulos em `duvidas/` **NUNCA disparam sozinhas**. Elas são acionadas **apenas quando o usuário usar expressamente o comando** da skill (ex: `/gestao-duvidas`, invocando a skill `gestao-duvidas`, ou solicitando explicitamente a criação de um módulo no repositório).
+3. **Estrutura do Módulo (Quando Comandado):** Ao receber o comando explícito, estruture a pasta `duvidas/<titulo_da_duvida>/` contendo:
    - `contexto.md`: Contextualização da dúvida e onde ela se insere (TCC qDATA, ABE ou mercado).
    - `licao.md`: Lição completa, tutorial didático com rigor matemático e perspectiva de engenharia.
    - `bibliografia.md`: Artigos acadêmicos e não acadêmicos, blogs técnicos e livros com capítulos específicos indicados.
-4. Consulte e siga as diretrizes completas em [`.agents/rules/gestao_duvidas_educacionais.md`](rules/gestao_duvidas_educacionais.md).
+   - Atualização do índice em [duvidas/README.md](duvidas/README.md).
+4. Consulte e siga as diretrizes completas em [`.agents/rules/gestao_duvidas_educacionais.md`](rules/gestao_duvidas_educacionais.md) e [`.agents/skills/gestao-duvidas/SKILL.md`](skills/gestao-duvidas/SKILL.md).
 
 ---
 
@@ -59,8 +59,8 @@ Sempre que o usuário manifestar qualquer dúvida conceitual, estatística ou de
 ---
 
 ## 7. DIRETIVA DE IDENTIFICAÇÃO E INDEXAÇÃO MATEMÁTICA (`math/`)
-Toda fórmula, axioma, teorema ou elemento matemático formal presente ou introduzido no repositório deve receber um identificador único categorizado entre parênteses:
-1. **Padrão por Categoria:** `(F1)`, `(F2)` para fórmulas; `(A1)`, `(A2)` para axiomas; `(T1)`, `(T2)` para teoremas; etc.
-2. **Registro em `math/`:** Todo identificador atribuído deve ser registrado em seu respectivo arquivo dentro de `math/` (`math/f.log` para fórmulas, `math/a.log` para axiomas, `math/t.log` para teoremas), armazenados **um abaixo do outro**.
+Toda fórmula, expressão, axioma, teorema ou elemento matemático formal presente ou introduzido no repositório deve receber um identificador único categorizado entre parênteses:
+1. **Padrão por Categoria:** `(F1)`, `(F2)` para fórmulas; `((E1))`, `((E2))` para expressões matemáticas; `(A1)`, `(A2)` para axiomas; `(T1)`, `(T2)` para teoremas; etc.
+2. **Registro em `math/`:** Todo identificador atribuído deve ser registrado em seu respectivo arquivo dentro de `math/` (`math/f.log` para fórmulas, `math/e.log` para expressões, `math/a.log` para axiomas, `math/t.log` para teoremas), armazenados **um abaixo do outro**.
 3. **Skill Automatizada:** Empregue a skill `identificador-matematico` para revisar automaticamente documentos com elementos matemáticos não codificados e indexá-los sequencialmente. Consulte [`.agents/rules/identificadores_matematicos.md`](rules/identificadores_matematicos.md).
 

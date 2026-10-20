@@ -19,4 +19,12 @@ duvidas/<titulo_da_duvida>/
 
 ---
 
+## Módulos Disponíveis
+
+1. [Amostragem Informacional via Dollar Bars](amostragem_dollar_bars/licao.md)
+   - *Gênese:* Explicação da fórmula de parada $\sum_{i=1}^T P_i Q_i \ge D$ na Seção 6.4.1 do TCC.
+   - *Arquivos:* [Contexto](amostragem_dollar_bars/contexto.md) | [Lição](amostragem_dollar_bars/licao.md) | [Bibliografia](amostragem_dollar_bars/bibliografia.md)
+
+---
+
 *Os módulos são criados sob demanda pelo consultor Tee mediante autorização prévia.*
