@@ -1,3 +1,7 @@
+[← Anterior: 00. Estado Atual](00_estado_atual_qdata.md) | [Índice Geral](../../README.md) | [Próximo: 02. Livro de Ofertas e Feature Store →](02_reconstrucao_lob_feature_store.md)
+
+---
+
 # Seção 6.4.1: Amostragem Baseada em Informação (Information-Driven Bars)
 
 ## 1. Problema Conceitual e Limitações da Barra M1

@@ -1,3 +1,7 @@
+[← Início / Índice](../../README.md) | **Seção 6.4: Trabalhos Futuros** | [Próximo: 01. Amostragem Informacional →](01_sampling_informacional.md)
+
+---
+
 # Estado Atual da Plataforma qDATA (TCC - Marco Estático)
 
 > **Nota de Restrição (Regra de Ouro):**

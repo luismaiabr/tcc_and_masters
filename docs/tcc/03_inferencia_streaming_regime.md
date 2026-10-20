@@ -1,3 +1,7 @@
+[← Anterior: 02. Livro de Ofertas e Feature Store](02_reconstrucao_lob_feature_store.md) | [Índice Geral](../../README.md) | [Próximo: 04. Baixa Latência e Replay Determinístico →](04_arquitetura_distribuida_replay.md)
+
+---
+
 # Seção 6.4.3: Motor de Inferência Estatística e Mudança de Regime em Streaming
 
 ## 1. Do Monitoramento Reativo à Inferência Sequencial

@@ -1,3 +1,7 @@
+[← Índice Geral](../../README.md) | **Módulo Mestrado (MAE / IME-USP)** | [Próximo: Ponte Teoria ↔ Engenharia →](ponte_estatistica_engenharia.md)
+
+---
+
 # Cronograma de Estudos para a ABE (16 Semanas)
 
 Este documento consolida o cronograma rigoroso de estudos para o Exame da Associação Brasileira de Estatística (ABE), porta de entrada para o Mestrado em Estatística (MAE / IME-USP).

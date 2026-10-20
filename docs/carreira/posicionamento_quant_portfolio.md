@@ -1,3 +1,7 @@
+[← Início / Índice Geral](../../README.md) | [Módulo Mestrado](../mestrado/pre_projeto_pesquisa_esboco.md) | [Evolução TCC](../tcc/00_estado_atual_qdata.md)
+
+---
+
 # Posicionamento de Mercado & Portfólio Quant
 
 Este documento define a estratégia de apresentação do perfil profissional e do projeto qDATA para processos seletivos de elite em fundos quantitativos, assets sistemáticas e bancos de investimento (ex: Itaú Quant, BTG Pactual, Giant Steps, BW Gestão, Quantitas, etc.).

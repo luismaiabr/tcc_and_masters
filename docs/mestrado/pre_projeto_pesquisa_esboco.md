@@ -1,3 +1,7 @@
+[← Anterior: Ponte Teoria ↔ Engenharia](ponte_estatistica_engenharia.md) | [Índice Geral](../../README.md) | [Próximo: Portfólio & Carreira Quant →](../carreira/posicionamento_quant_portfolio.md)
+
+---
+
 # Esboço de Pré-Projeto de Mestrado (MAE / IME-USP)
 
 **Título Provisório:**  

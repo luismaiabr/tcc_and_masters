@@ -5,7 +5,7 @@ Repositório central de planejamento acadêmico, estruturação de propostas de 
 ---
 
 ## 🧭 Princípio Fundamental (Regra de Ouro)
-> **O escopo já implementado no TCC (a plataforma qDATA em seu estado atual) permanece CONGELADO e INALTERADO.**
+> **O escopo já implementado no TCC (a plataforma qDATA em seu estado atual) permanece CONGELADO e INALTERADO.**  
 > Todas as análises, arquiteturas e propostas desenvolvidas neste repositório dedicam-se exclusivamente a:
 > 1. Redação e fundamentação da **Seção 6.4 ("Trabalhos Futuros")** do TCC.
 > 2. Estruturação do **pré-projeto de pesquisa para o MAE / IME-USP**.
@@ -13,62 +13,62 @@ Repositório central de planejamento acadêmico, estruturação de propostas de 
 
 ---
 
-## 📂 Mapa Modular do Repositório
+## 🗂️ Navegação Rápida (Hub Principal)
 
-```
+| Módulo | Documento | Descrição Executiva |
+| :--- | :--- | :--- |
+| **Contexto Estático** | [00. Estado Atual do qDATA](docs/tcc/00_estado_atual_qdata.md) | O que já está pronto (FastAPI, TimescaleDB, gRPC, Wine/MT5). |
+| **TCC 6.4 (Trabalhos Futuros)** | [01. Amostragem Informacional](docs/tcc/01_sampling_informacional.md) | Dollar Bars e Imbalance Bars com restauração via TCL. |
+| **TCC 6.4 (Trabalhos Futuros)** | [02. Livro de Ofertas e Feature Store](docs/tcc/02_reconstrucao_lob_feature_store.md) | Cálculo online de OFI, VPIN, Micro-Price e Roll Spread. |
+| **TCC 6.4 (Trabalhos Futuros)** | [03. Inferência Estatística em Streaming](docs/tcc/03_inferencia_streaming_regime.md) | TRV/Wilks, Processos de Hawkes e filtragem por Marchenko-Pastur. |
+| **TCC 6.4 (Trabalhos Futuros)** | [04. Baixa Latência e Replay Determinístico](docs/tcc/04_arquitetura_distribuida_replay.md) | Pipeline Hot/Cold e garantia de Point-in-Time Correctness. |
+| **TCC 6.4 (Trabalhos Futuros)** | [05. Governança e Roteamento Dual-Stream](docs/tcc/05_governanca_regulatoria_dual_stream.md) | Watermark temporal para delay de 15 min (B3) e Zero Trust. |
+| **Mestrado (MAE / IME-USP)** | [Cronograma ABE (16 Semanas)](docs/mestrado/cronograma_abe_16_semanas.md) | Roteiro de estudos em Probabilidade Avançada e Inferência. |
+| **Mestrado (MAE / IME-USP)** | [Ponte Teoria $\leftrightarrow$ Engenharia](docs/mestrado/ponte_estatistica_engenharia.md) | Mapeamento explícito entre teoremas da prova e código do qDATA. |
+| **Mestrado (MAE / IME-USP)** | [Esboço de Pré-Projeto](docs/mestrado/pre_projeto_pesquisa_esboco.md) | Proposta formal para abordagem a professores de Séries Temporais. |
+| **Mercado Quant** | [Portfólio & Carreira Quant](docs/carreira/posicionamento_quant_portfolio.md) | Bullet points para CV e roteiro para entrevistas técnicas. |
+| **Referências Canônicas** | [Identidade Original](identidade.md) / [Plano de Estudos ABE](plano_para_mestrado.md) | Diretrizes originais e plano mestre de estudos. |
+
+---
+
+## 📂 Árvore de Diretórios Navegável
+
+Clique diretamente em qualquer arquivo para acessá-lo no GitHub:
+
+```text
 tcc_and_masters/
-├── .agents/                                # Configuração e inteligência do assistente (Tee)
-│   ├── GEMINI.md                           # Persona do Arquiteto Sênior Quant e regras gerais
-│   └── rules/                              # Diretrizes especializadas
-│       ├── quant_architecture.md           # Regras de arquitetura de baixa latência e streaming
-│       └── academic_standards.md           # Normas de rigor acadêmico, LaTeX/ABNT e IME-USP
+├── .agents/
+│   ├── [GEMINI.md](.agents/GEMINI.md)                                # Persona do Arquiteto Sênior Quant e regras gerais
+│   └── rules/
+│       ├── [quant_architecture.md](.agents/rules/quant_architecture.md) # Regras de arquitetura de baixa latência e streaming
+│       └── [academic_standards.md](.agents/rules/academic_standards.md) # Normas de rigor acadêmico, LaTeX/ABNT e IME-USP
 │
 ├── docs/
-│   ├── tcc/                                # Seção 6.4 do TCC: Trabalhos Futuros da Plataforma qDATA
-│   │   ├── 00_estado_atual_qdata.md        # Marco estático do sistema construído no TCC
-│   │   ├── 01_sampling_informacional.md    # Information-Driven Bars (Tick, Volume, Dollar, Imbalance)
-│   │   ├── 02_reconstrucao_lob_feature_store.md # Reconstrução de Livro L2 e Feature Store (OFI, VPIN)
-│   │   ├── 03_inferencia_streaming_regime.md # Inferência online, TRV/Wilks, Hawkes e Marchenko-Pastur
-│   │   ├── 04_arquitetura_distribuida_replay.md # Hot/Cold Path e Replay Determinístico Point-in-Time
-│   │   └── 05_governanca_regulatoria_dual_stream.md # Dual-stream routing e delay regulatório B3 (15 min)
+│   ├── tcc/                                                          # Seção 6.4 do TCC: Trabalhos Futuros da Plataforma qDATA
+│   │   ├── [00_estado_atual_qdata.md](docs/tcc/00_estado_atual_qdata.md)         # Marco estático do sistema construído no TCC
+│   │   ├── [01_sampling_informacional.md](docs/tcc/01_sampling_informacional.md)     # Dollar Bars e Imbalance Bars (TCL)
+│   │   ├── [02_reconstrucao_lob_feature_store.md](docs/tcc/02_reconstrucao_lob_feature_store.md) # Feature Store de Microestrutura (OFI, VPIN)
+│   │   ├── [03_inferencia_streaming_regime.md](docs/tcc/03_inferencia_streaming_regime.md)    # TRV/Wilks, Hawkes e Marchenko-Pastur
+│   │   ├── [04_arquitetura_distribuida_replay.md](docs/tcc/04_arquitetura_distribuida_replay.md) # Hot/Cold Path e Replay Determinístico
+│   │   └── [05_governanca_regulatoria_dual_stream.md](docs/tcc/05_governanca_regulatoria_dual_stream.md) # Dual-Stream Routing (delay B3 15m)
 │   │
-│   ├── mestrado/                           # Rota de Ingresso e Pesquisa (MAE / IME-USP)
-│   │   ├── cronograma_abe_16_semanas.md    # Cronograma operacional de 16 semanas para o Exame da ABE
-│   │   ├── ponte_estatistica_engenharia.md # Correspondência direta entre teoria ABE e código do qDATA
-│   │   └── pre_projeto_pesquisa_esboco.md  # Esboço do pré-projeto para abordagem a orientadores
+│   ├── mestrado/                                                     # Rota de Ingresso e Pesquisa (MAE / IME-USP)
+│   │   ├── [cronograma_abe_16_semanas.md](docs/mestrado/cronograma_abe_16_semanas.md) # Cronograma de 16 semanas para a ABE
+│   │   ├── [ponte_estatistica_engenharia.md](docs/mestrado/ponte_estatistica_engenharia.md) # Correspondência: Teoria ABE <-> qDATA
+│   │   └── [pre_projeto_pesquisa_esboco.md](docs/mestrado/pre_projeto_pesquisa_esboco.md)   # Esboço para contato com orientadores
 │   │
-│   └── carreira/                           # Posicionamento no Mercado Financeiro Quantitativo
-│       └── posicionamento_quant_portfolio.md # Bullets para CV e guia para entrevistas de Quant Dev/Research
+│   └── carreira/                                                     # Posicionamento no Mercado Financeiro Quantitativo
+│       └── [posicionamento_quant_portfolio.md](docs/carreira/posicionamento_quant_portfolio.md) # Bullets para CV e guia para entrevistas
 │
-├── identidade.md                           # Registro de identidade original e diretrizes do consultor Tee
-├── plano_para_mestrado.md                  # Documento de referência estática do cronograma da ABE
-└── README.md                               # Este índice geral do projeto
+├── [identidade.md](identidade.md)                                            # Registro de identidade original e diretrizes do consultor Tee
+├── [plano_para_mestrado.md](plano_para_mestrado.md)                                   # Documento de referência estática do cronograma da ABE
+└── [README.md](README.md)                                                # Este índice geral do projeto
 ```
 
 ---
 
-## 🔗 Acesso Rápido aos Documentos
-
-### 1. Evolução do TCC (Trabalhos Futuros — Seção 6.4)
-- [00. Estado Atual do qDATA](file:///docs/tcc/00_estado_atual_qdata.md): O que já está concluído (FastAPI, TimescaleDB, gRPC, Wine/MT5).
-- [01. Amostragem Informacional](file:///docs/tcc/01_sampling_informacional.md): Substituição da barra M1 por Dollar e Imbalance Bars.
-- [02. Livro de Ofertas e Feature Store](file:///docs/tcc/02_reconstrucao_lob_feature_store.md): Cálculo em tempo real de OFI, VPIN, Micro-Price e Roll Spread.
-- [03. Inferência Estatística em Streaming](file:///docs/tcc/03_inferencia_streaming_regime.md): Detecção de quebras com TRV, processos de Hawkes e matrizes limpas por Marchenko-Pastur.
-- [04. Baixa Latência e Replay Determinístico](file:///docs/tcc/04_arquitetura_distribuida_replay.md): Desacoplamento Hot/Cold Path e garantia de Point-in-Time Correctness.
-- [05. Governança e Roteamento Dual-Stream](file:///docs/tcc/05_governanca_regulatoria_dual_stream.md): Watermark temporal para delay de 15 minutos (B3) e Zero Trust.
-
-### 2. Mestrado em Estatística (MAE / IME-USP)
-- [Cronograma ABE (16 Semanas)](file:///docs/mestrado/cronograma_abe_16_semanas.md): Planejamento detalhado em Probabilidade Avançada e Inferência Estatística.
-- [Ponte Teoria $\leftrightarrow$ Engenharia](file:///docs/mestrado/ponte_estatistica_engenharia.md): Como cada teorema da prova se aplica no desenvolvimento de sistemas quantitativos.
-- [Esboço de Pré-Projeto](file:///docs/mestrado/pre_projeto_pesquisa_esboco.md): Proposta de pesquisa formal para contato com orientadores de Séries Temporais.
-
-### 3. Posicionamento Profissional
-- [Portfólio & Carreira Quant](file:///docs/carreira/posicionamento_quant_portfolio.md): Bullet points prontos para currículo e respostas para entrevistas técnicas de Quant Developer e Quant Researcher.
-
----
-
-## 🤖 Consultoria Automatizada (.agents)
-O diretório [`.agents/`](file:///./.agents/) configura o comportamento do agente **Tee** em qualquer sessão deste repositório, garantindo conformidade com:
+## 🤖 Consultoria Automatizada ([.agents/](.agents/))
+O diretório [`.agents/`](.agents/) configura o comportamento do agente **Tee** em qualquer sessão deste repositório, garantindo conformidade com:
 - A regra de restrição sobre o escopo atual do TCC.
 - A **Dupla Lente Obrigatória** (Engenharia de Software + Rigor Estatístico) em todas as propostas técnicas.
-- As regras arquiteturais e acadêmicas especificadas em [`.agents/rules/`](file:///./.agents/rules/).
+- As regras arquiteturais e acadêmicas especificadas em [`.agents/rules/`](.agents/rules/).

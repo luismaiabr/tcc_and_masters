@@ -1,3 +1,7 @@
+[← Anterior: 01. Amostragem Informacional](01_sampling_informacional.md) | [Índice Geral](../../README.md) | [Próximo: 03. Inferência Estatística em Streaming →](03_inferencia_streaming_regime.md)
+
+---
+
 # Seção 6.4.2: Reconstrução do Livro de Ofertas e Feature Store de Microestrutura
 
 ## 1. Do Dado Bruto às Características de Microestrutura

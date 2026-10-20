@@ -1,3 +1,7 @@
+[← Anterior: 04. Baixa Latência e Replay Determinístico](04_arquitetura_distribuida_replay.md) | [Índice Geral](../../README.md) | [Módulo Mestrado: Cronograma ABE →](../mestrado/cronograma_abe_16_semanas.md)
+
+---
+
 # Seção 6.4.5: Governança Regulatória e Roteamento Dual-Stream
 
 ## 1. Contexto Regulatório e Restrições da B3

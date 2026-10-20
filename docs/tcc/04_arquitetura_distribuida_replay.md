@@ -1,3 +1,7 @@
+[← Anterior: 03. Inferência Estatística em Streaming](03_inferencia_streaming_regime.md) | [Índice Geral](../../README.md) | [Próximo: 05. Governança e Roteamento Dual-Stream →](05_governanca_regulatoria_dual_stream.md)
+
+---
+
 # Seção 6.4.4: Engenharia de Baixa Latência e Replay Determinístico
 
 ## 1. Desafios de Confiabilidade em Sistemas Quantitativos
